@@ -1,5 +1,5 @@
 document.querySelector('#new-quote-btn').addEventListener('click',()=>{
-    fetch('/quote')
+    fetch('/')
         .then(response => response.json())
         .then(data =>{
             document.querySelector('#quote').innerText = data.quote;
