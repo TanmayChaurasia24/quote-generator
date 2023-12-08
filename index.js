@@ -1,9 +1,11 @@
 const express = require("express");
+const path = require("path");  // Add this line to use the 'path' module
 const app = express();
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;  // Fix the typo in 'process.env.PORT'
 
-app.use(express.static("public"));
+// Use the "public" directory for static files
+app.use(express.static(path.join(__dirname, "public")));
 
 // Array of sample quotes
 const quotes = [
