@@ -1,0 +1,70 @@
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(
+      to bottom,
+      rgb(176, 137, 181),
+      rgb(206, 73, 73)
+    );
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  #quote-container {
+    text-align: center;
+    padding: 20px;
+    outline: none;
+    border:none;
+    color: rgb(35, 28, 28);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    max-width: 600px;
+    width: 100%;
+  }
+
+  #new-quote-btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .favorite-btn {
+background-color: #4caf50;
+color: #fff;
+padding: 5px 10px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.favorite-btn:hover {
+background-color: #45a049;
+}
+
+  #new-quote-btn:hover {
+    background-color: #45a049;
+  }
+
+  .area {
+    background-color: #e5f4e6;
+    height: 30vh;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  @media only screen and (max-width: 600px) {
+    #quote-container {
+      padding: 10px;
+    }
+
+    #new-quote-btn {
+      font-size: 14px;
+    }
+  }
